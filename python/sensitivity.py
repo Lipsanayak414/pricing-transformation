@@ -1,19 +1,3 @@
-"""
-sensitivity.py  |  How robust is the "C wins" result?
-=====================================================
-The base model (scenario_model.py) shows Scenario C (2.0x) leading on ARR,
-trough, and gross profit. But that depends on customers tolerating a price
-doubling with only mild churn. This script stresses that single assumption.
-
-We scale C's price RESISTANCE by a factor r >= 1.0:
-  - churn is multiplied by r (more customers leave at higher resistance)
-  - the adoption ceiling is reduced (fewer ultimately convert)
-and find the r at which C's Year-5 ARR falls below Scenario B's.
-
-Interpretation: if real-world resistance to a 2.0x conversion is at or above
-that threshold, B is the better risk-adjusted choice.
-"""
-
 import pandas as pd
 
 BASE_MAINTENANCE_ARR = 180.0
