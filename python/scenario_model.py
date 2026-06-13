@@ -1,37 +1,5 @@
-"""
-scenario_model.py  |  Perpetual-license -> SaaS migration model
-================================================================
-Phase 6 deliverable. Models three migration paths (A/B/C) and identifies
-which maximises long-term ARR while keeping the near-term reported-revenue
-trough within CFO/board tolerance.
-
-PROVENANCE
-----------
-The STRUCTURE and proportions are calibrated to disclosed insurance-software
-economics (Guidewire revenue mix; Duck Creek SaaS NDR band; lower SaaS gross
-margin from cloud COGS). The starting-state levels and the adoption/churn
-schedules are Tier-3 modelling assumptions, stated explicitly below and
-bounded by those disclosures. No fabricated customer-level records are used.
-
-KEY MODELLING PRINCIPLES (defend these in interview)
-----------------------------------------------------
-1. Revenue multiple != profit multiple. SaaS carries hosting COGS, so its
-   gross margin is structurally below maintenance. We report gross PROFIT,
-   not just revenue, so a higher multiple does not automatically "win".
-2. The trough is driven by forgone upfront PERPETUAL LICENSE bookings as the
-   product is sunset -- NOT by the conversion multiple. Sunset window and
-   conversion multiple are separate levers.
-3. Higher conversion multiple -> more subscription per conversion, but slower
-   adoption and higher churn (price resistance). Without this elasticity the
-   model would mechanically pick the highest multiple every time.
-"""
-
 import pandas as pd
 
-# ---------------------------------------------------------------------------
-# STARTING STATE (Year 0).  USD millions.  Tier-3 assumption, calibrated to
-# insurance-software proportions for a ~$470M-revenue vendor mid-transition.
-# ---------------------------------------------------------------------------
 BASE_MAINTENANCE_ARR = 180.0   # convertible perpetual-maintenance pool
 BASE_SUBSCRIPTION_ARR = 120.0  # ARR already on SaaS (held flat to isolate the migration effect)
 BASE_LICENSE_BOOKINGS = 90.0   # annual new perpetual license, recognised in-year (the trough driver)
