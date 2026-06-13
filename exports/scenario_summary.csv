@@ -1,0 +1,4 @@
+scenario,year0_rev_musd,trough_rev_musd,trough_depth_pct,trough_year,year5_arr_musd,year5_total_rev_musd,year5_blended_gm_pct,year5_gross_profit_musd
+A_1.25x,470.0,410.6,12.6,3,334.2,414.2,57.7,239.0
+B_1.50x,470.0,434.0,7.7,3,364.8,444.8,59.1,263.0
+C_2.00x,470.0,455.6,3.1,3,399.0,479.0,60.5,289.7

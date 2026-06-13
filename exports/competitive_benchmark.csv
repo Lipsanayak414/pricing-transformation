@@ -1,0 +1,8 @@
+company,role,metric,value,unit,note
+Guidewire,anchor,ARR,1032,musd,FY2025 disclosed
+Guidewire,anchor,ARR_growth,19,pct,FY2025 disclosed
+Sapiens,corroborator,ARR,168,musd,Q1 2024 disclosed
+Sapiens,corroborator,ARR_growth,12.7,pct,Q1 2024 disclosed
+Duck Creek,historical,SaaS_ARR,169.3,musd,FY2022 (now private)
+Duck Creek,historical,NDR,108,pct,FY2022 (now private)
+Duck Creek,historical,SaaS_ACV_mix,97,pct,FY2022 (now private)

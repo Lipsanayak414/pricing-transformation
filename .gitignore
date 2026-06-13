@@ -1,0 +1,29 @@
+# Secrets & environment
+.env
+*.env
+secrets.*
+*.pgpass
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Data dumps (keep schema + seeds in git; keep large generated data out)
+*.dump
+*.bak
+# model outputs are tracked; ad-hoc dumps are not
+*.tmp.csv
+
+# Power BI temp
+*.pbix.tmp
+~$*
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
